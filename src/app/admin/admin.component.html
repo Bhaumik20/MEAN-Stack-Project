@@ -1,0 +1,73 @@
+<table *ngIf="users && !this.flag && !this.flag2" class="table-fill">
+    <thead>
+        <tr>
+            <th colspan="4" class="text-center">Users-List</th>
+        </tr>
+    </thead>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.fullName.split(' ')[0]}}</td>
+            <td>{{user.fullName.split(' ')[1]}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.role}}</td>
+            <td><button type="button" (click)="confirm(user)" class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
+            <td><button type="button" (click)="this.flag2=true;this.newUser=user" class="btn btn-priamry"><i class="fas fa-user-edit"></i></button></td>
+        </tr>
+        <tr>
+                <td colspan="4"><button (click)="this.flag=true;" class="btn btn-success btn-block">+ Add new user</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="this.flag">
+        <h2>New User</h2>
+        <form #form="ngForm" (ngSubmit)="add()" class="well">
+            <div class="form-group">
+                <label>Fullname</label><br>
+                <input type="text" class="form-control" required name="fullName" [(ngModel)]="this.newUser.fullName">
+            </div>
+            <div class="form-group">
+                    <label>Email</label><br>
+                    <input type="text" class="form-control" required name="email" [(ngModel)]="this.newUser.email">
+            </div>
+            <div class="form-group">
+                    <label>Password</label><br>
+                    <input type="password" class="form-control" required name="password" [(ngModel)]="this.newUser.password">
+            </div>
+            <div class="form-group">
+                    <label>Role</label><br>
+                    <input type="text" class="form-control" name="role" [(ngModel)]="this.newUser.role">
+            </div>
+            <button (click)="add()" type="submit" class="btn btn-success">Save</button>
+        </form>
+</div>
+
+<div *ngIf="this.flag2">
+        <h2>New User</h2>
+        <form #form="ngForm" (ngSubmit)="add()" class="well">
+            <div class="form-group">
+                <label>Fullname</label><br>
+                <input type="text" class="form-control" required name="fullName" [(ngModel)]="this.newUser.fullName">
+            </div>
+            <div class="form-group">
+                    <label>Email</label><br>
+                    <input type="text" disabled class="form-control" required name="email" [(ngModel)]="this.newUser.email">
+            </div>
+           
+            <div class="form-group">
+                    <label>Role</label><br>
+                    <input type="text" class="form-control" name="role" [(ngModel)]="this.newUser.role">
+            </div>
+            <button (click)="update()" type="submit" class="btn btn-success">Update</button>
+        </form>
+</div>
+
+

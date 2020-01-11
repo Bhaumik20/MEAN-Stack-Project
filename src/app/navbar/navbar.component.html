@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#"><img id="icon" src="https://img.icons8.com/nolan/45/000000/reading.png"></a>
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home" routerLinkActive="active">home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/editor/0" routerLinkActive="active">editor</a>
+            </li>
+            
+            <li class="nav-item" *ngIf="(this.flag)">
+                <a class="nav-link" routerLink="/admin" routerLinkActive="active">Users</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="collapsibleNavbar" role="button" data-toggle="dropdown">
+                    categories</a>
+                <ul class="dropdown-menu">
+                    <div class="dropright">
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-item " href="#" data-toggle="dropdown">Course</a>
+                            <ul class="dropdown-menu">
+                                <li >
+                                    <a class="dropdown-item" href="#" routerLink="/htmlcourse/home" routerLinkActive="active">html</a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">css</a></li>
+                            </ul>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-item " href="#Advance" role="button" data-toggle="dropdown">Advance</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#" routerLink="/jscourse/home" routerLinkActive="active">Javascript</a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <li class="dropdown-item">AngularJS</li>
+                                <div class="dropdown-divider"></div>
+                                <li class="dropdown-item">NodeJS</li>
+                                <div class="dropdown-divider"></div>
+                                <li class="dropdown-item">MongoDB</li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/video" routerLinkActive="active">Tutorials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#fun">fun</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contect">contact</a>
+            </li>
+            <li class="nav-item" *ngIf="!(this.userService.isLoggedIn())">
+                <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+            </li>
+
+            <li class="nav-item" *ngIf="(this.userService.isLoggedIn())">
+                <a class="nav-link" routerLink="/userprofile" routerLinkActive="active">Profile</a>
+            </li>
+
+
+
+
+        </ul>
+        <form class="form-inline md-form form-sm">
+            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+            <i class="fas fa-search" aria-hidden="true"></i>
+        </form>
+
+    </div>
+</nav>

@@ -1,0 +1,5 @@
+<div class="list-group">
+    <div *ngFor="let video of videos">
+        <button type="button" class="list-group-item list-group-item-action" (click)="onSelect(video)">{{video.title}}</button>
+    </div>
+</div>

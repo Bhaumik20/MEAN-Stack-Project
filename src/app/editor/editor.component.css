@@ -1,0 +1,19 @@
+
+        #editor {
+            margin-top: 100px;
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+        }
+
+      
+
+        #container {
+            
+            height: 100%;
+          
+            white-space: nowrap;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }

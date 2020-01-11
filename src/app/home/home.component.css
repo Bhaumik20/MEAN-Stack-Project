@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962
+}
+#icon{
+  font-size: 2rem;
+}
+.offset:before{
+  display: block;
+  content:"";
+  height: 4rem;
+  margin-top: -4rem;
+  
+  }
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.8)!important;
+}
+.navbar-nav li{
+  padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+}
+/* .home-inner{
+  background-image: url(img/first-8.jpg);
+
+}  */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: red;
+}
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .4rem .4rem .8rem rgba(255, 0, 0, 0.856);
+
+}
+.c2{
+  font-size: 2rem;
+
+  text-shadow: .2rem .2rem .8rem rgb(182, 22, 22);
+}
+.c3{
+  text-shadow: .2rem .2rem .8rem rgb(182, 22, 22);
+}
+.logo h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem gray;
+
+}
+.caption h3{
+  font-size:2rem;
+  text-shadow: .1rem .1rem .5rem gray;
+  padding-bottom: 1.6rem;
+}
+
+.jumbotron{
+  margin-bottom: 0;
+  padding:2rem 0 3.5rem;
+  border-radius: 0;
+}
+h3.heading{
+  font-size:1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline{
+  height:.2rem;
+  background-color: red;
+  margin: 0 auto 2rem;
+
+}
+
+
+.btn-lg{
+  border-width:medium;
+  border-radius: 0;
+  padding:.6rem 1.3rem;
+  font-size:1.1rem;
+}
+
+.fixed{
+  background-image: url(../../assets/img/fixed-1.jpg);
+  z-index: 1;
+}
+
+
+
+.dark{
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  padding: 7rem 2rem;
+}
+.dark2{
+  background-color: rgba(0, 0, 0, 0.514);
+  color: white;
+}
+
+.fixed-background h3{
+  margin-top:0.7rem;
+}
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+    font-size: 2.4rem;
+  }
+
+  footer{
+    color: white;
+    padding: 2rem 0 2rem;
+    margin-top: 1rem;
+  }
+  [class*="col-"] {
+    padding: 1rem;
+  }
+  
+  .row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+  }
+  
+
+  
+  .landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+  }
+  .home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  .fixed-background {
+    position: relative;
+    width: 100%;
+  }
+  .fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999!important;
+  }
+  .fixed {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+@media(max-width:767px)
+{
+  .caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  
+  .caption h1{
+    font-size: 2.8rem;
+    letter-spacing: .15rem;
+    text-shadow: .1rem .1rem .8rem rgba(214, 18, 18, 0.541);
+  
+  }
+  
+  .logo h1{
+    font-size: 3.8rem;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem gray;
+  
+  }
+  
+
+.c2{
+  font-size: 1.5rem;
+
+  text-shadow: .1rem .1rem .8rem rgb(182, 22, 22);
+}
+.c3{
+  text-shadow: .1rem .1rem .8rem rgb(182, 22, 22);
+}
+.logo h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem gray;
+
+}
+.caption h3{
+  font-size:2rem;
+  text-shadow: .1rem .1rem .5rem gray;
+  padding-bottom: 1.6rem;
+}
+}
+
+ol,ul {
+	list-style:none;
+}
+.slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+
+    animation: imageAnimation 30s linear infinite 0s;
+}
+
+
+.slideshow li:nth-child(1) span { background-image: url(../../assets/img/1.jpg); }
+.slideshow li:nth-child(2) span {
+    background-image: url(../../assets/img/2.jpg);
+
+    animation-delay: 6s;
+}
+.slideshow li:nth-child(3) span {
+    background-image: url(../../assets/img/3.jpg);
+
+    animation-delay: 12s;
+}
+.slideshow li:nth-child(4) span {
+    background-image: url(../../assets/img/4.jpg);
+
+    animation-delay: 18s;
+}
+.slideshow li:nth-child(5) span {
+    background-image: url(../../assets/img/5.jpg);
+
+    animation-delay: 24s;
+}
+.slideshow li:nth-child(6) span {
+    background-image: url(../../assets/img/6.png);
+   
+    animation-delay: 30s;
+}
+.slideshow li:nth-child(1) div
+ {
+      background-image: url(../../assets/img/1.jpg);
+     }
+.slideshow li:nth-child(2) div {
+   
+    animation-delay: 6s;
+}
+.slideshow li:nth-child(3) div {
+
+    animation-delay: 12s;
+}
+.slideshow li:nth-child(4) div {
+
+    animation-delay: 18s;
+}
+.slideshow li:nth-child(5) div {
+
+    animation-delay: 24s;
+}
+.slideshow li:nth-child(6) div {
+   
+    animation-delay: 30s;
+}
+
+@keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	17% {
+	    opacity: 1;
+	    transform: scale(1.1);
+	}
+	25% {
+	    opacity: 0;
+	    transform: scale(1.1);
+	}
+	100% { opacity: 0 }
+}
+
+#particles-js
+{
+    height: 100%;
+    background: rgb(49, 48, 48);
+}
+
+
+

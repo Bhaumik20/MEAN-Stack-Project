@@ -1,0 +1,131 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+
+
+
+.heading{
+
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 1rem;
+}
+.underline{
+    height:.2rem;
+    background-color:white;
+    margin-left:1rem;
+    width: 11rem;
+}
+
+ .wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+} 
+ /* #sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}  */
+
+.sidebar {
+    display: inline-block;
+      height: 100%;
+      width: 15rem;
+      position: fixed;
+      z-index: 1;
+      margin-top: 4.4rem;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+      transition: all 0.3s;
+  }
+
+  .sidebar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      color: #818181;
+      display: block;
+  }
+
+  .sidebar a:hover {
+      color: #f1f1f1;
+  }
+  .sidebar a.active{
+    color:rgba(255, 35, 35, 0.849);
+  }
+
+
+
+
+
+
+
+/* #content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+} */
+
+ @media screen and (min-width:577px){
+    .sidebar{margin-left:0px;}
+    .sidebar.active2{
+		margin-left: 0px;
+    }
+    .sidebar .closebtn {
+        display: none;
+      }
+      #sidebarCollapse{
+          display:none;
+      }
+}
+
+@media screen and (max-width:577px){
+    .sidebar .closebtn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+	.sidebar{margin-left: -250px;}
+	.sidebar.active2{
+		margin-left: 0px;
+    }
+    
+    #sidebarCollapse{
+        display:block;
+    }
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

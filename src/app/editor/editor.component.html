@@ -1,0 +1,8 @@
+<div id="conainer">
+    <div ace-editor id="editor" [(text)]="text" [mode]="'html'" [theme]="'monokai'" [options]="options" 
+        [readOnly]="false" [autoUpdateContent]="true" [durationBeforeCallback]="1000" (textChanged)="onChange($event)"
+        >
+        
+    </div>
+    <div id="out"></div>
+</div>

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+body{
+    word-spacing: 2px;
+    font-family: 'Varela Round', sans-serif;    
+
+}
+
+@font-face {
+    font-family:'Varela Round', sans-serif;
+    src: url('/assets/font/VarelaRound-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.heading{
+
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 1rem;
+}
+.underline{
+    height:.2rem;
+    background-color:white;
+    margin-left:1rem;
+    width: 11rem;
+}
+p{
+    line-height: 1.3rem;
+}
+.note{
+    margin-top: 2rem;
+    background: rgba(245, 208, 2, 0.192);
+    padding: 8px 30px;
+    margin-right: 17rem;
+    box-shadow: none !important;
+}
+.note_gray{
+    margin-top: 2rem;
+    background: rgba(128, 128, 128, 0.13);
+    padding: 20px 30px;
+    margin-right: 17rem;
+    box-shadow: none !important;
+}
+.note_red{
+    margin-top: 2rem;
+    background: rgba(235, 11, 11, 0.247);
+    padding: 20px 30px;
+    margin-right: 17rem;
+    box-shadow: none !important;
+}
+.note_green{
+    margin-top: 2rem;
+    background: rgba(94, 211, 16, 0.37);
+    padding: 20px 30px;
+    margin-right: 17rem;
+    box-shadow: none !important;
+}
+.tag {
+    font-size: 105%;
+    background: rgba(128, 128, 128, 0.226);
+}
+
+.jumbo {
+    background: rgba(128, 128, 128, 0.13);
+    padding: 8px 30px;
+    margin-right: 17rem;
+    box-shadow: none !important;
+
+}
+
+.in_jumbo {
+    background: white;
+    padding: 0.5rem;
+}
+ .try_link,.try_link:link, .try_link:visited {
+    background-color:rgba(255, 35, 35, 0.849);
+    color: white;
+    margin-top:6px;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    overflow: hidden;
+    text-align: center;
+}
+
+.try_link:hover, .t:active {
+background-color:red
+}
+ul{
+   
+        list-style-type: square;
+      
+      
+}
+.box_html{
+    width:70%;
+    border:1px solid grey;
+    padding:3px;
+    margin:20px;
+    background-color:#ddd
+}
+.box_head{
+    width:90%;
+    border:1px solid grey;
+    padding:3px;
+    margin:20px
+
+}
+.box_body{
+    width:90%;
+    border:1px solid grey;
+    padding:3px;
+    margin:20px;
+    background-color:#ddd
+}
+.box_in_body{
+    width:90%;
+    border:1px solid grey;
+    padding:3px;
+    margin:20px;
+    background-color:#fff
+}
+.box_body_content{
+    width:90%;
+    border:1px solid grey;
+    padding:5px;
+    margin:20px
+
+}
+.box_title{
+    width:90%;
+    border:1px solid grey;
+    padding:5px;
+    margin:20px
+}
+.tagcolor {
+    color: mediumblue
+}
+
+.tagnamecolor {
+    color: brown
+}
+
+.attributecolor {
+    color: red
+}
+
+.attributevaluecolor {
+    color: mediumblue
+}
+.jscolor {
+    color: black
+}
+
+.jskeywordcolor {
+    color: mediumblue
+}
+
+.jsstringcolor {
+    color: brown
+}
+
+.jsnumbercolor {
+    color: red
+}
+
+.jspropertycolor {
+    color: black
+}
+
+.javacolor {
+    color: black
+}
+
+.javakeywordcolor {
+    color: mediumblue
+}
+
+.javastringcolor {
+    color: brown
+}
+
+.javanumbercolor {
+    color: red
+}
+
+.javapropertycolor {
+    color: black
+}
+.commentcolor{
+    color: green;
+}
+
+@media screen and (max-width: 577px) {
+    .jumbo {
+        background: rgba(128, 128, 128, 0.226);
+        padding: 8px 30px;
+        margin-right: 8px;
+        margin-left: -20px;
+        box-shadow: none !important;
+
+    }
+    .note{
+        margin-top: 2rem;
+        background: rgba(211, 182, 16, 0.459);
+        padding: 8px 30px;
+        margin-right: 8px;
+        box-shadow: none !important;
+    }
+    .note_gray{
+        margin-top: 2rem;
+        background: rgba(128, 128, 128, 0.13);
+        padding: 20px 30px;
+        margin-right: 8px;
+        box-shadow: none !important;
+    }
+    .note_red{
+        margin-top: 2rem;
+        background: rgba(235, 11, 11, 0.247);
+        padding: 20px 30px;
+        margin-right: 8px;
+        box-shadow: none !important;
+    }
+    .note_green{
+        margin-top: 2rem;
+        background: rgba(94, 211, 16, 0.459);
+        padding: 20px 30px;
+        margin-right: 8px;
+        box-shadow: none !important;
+    }
+
+.image1{
+    height: 29rem;
+    width: 29rem;
+}
+
+.box_html{
+    width:90%;
+    border:1px solid grey;
+    padding:3px;
+    margin:20px;
+    background-color:#ddd
+}
+body{
+    word-spacing: 1px;
+}
+
+}
+
+@media screen and (max-width: 882px) {
+    .image1{
+        height: 21rem;
+        width: 21rem;
+    }
+    .image2{
+        height: 10rem;
+        width: 21rem;
+    }
+    .image3{
+        height: 18rem;
+        width: 21rem;
+    }
+}

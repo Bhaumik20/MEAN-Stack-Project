@@ -1,0 +1,877 @@
+<app-sidenav [select]="course"></app-sidenav>
+<div [ngSwitch]="id" style="margin-left: 250px;margin-top: 100px;">
+    <div *ngSwitchCase="'home'" class="content">
+        <h1>JavaScript Tutorial</h1>
+        <hr>
+        <div class="note_green">
+            <p>JavaScript is the programming language of HTML and the Web.</p>
+            <p>JavaScript is easy to learn.</p>
+            <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+        </div>
+        <hr>
+        <h2>Examples in Each Chapter</h2>
+        <p>With our "Try it Yourself" editor, you can edit the source code and view
+            the result.</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <h2>My First JavaScript</h2>
+                <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
+                    Click me to display Date and Time</button>
+                <p id="demo"></p>
+            </div>
+            <p>
+                <a target="_blank" routerLink="/editor/10" class="try_link" href="#">Try it Yourself »</a>
+            </p>
+        </div>
+
+        <div class="note">
+            <p>We recommend reading this tutorial, in the sequence listed in the left menu.</p>
+        </div>
+
+        <hr>
+        <h2>Learn by Examples</h2>
+        <p>Examples are better than 1000 words. Examples are often easier to understand
+            than text explanations.</p>
+        <p>This tutorial supplements all explanations with clarifying "Try it Yourself" examples.</p>
+        <p><a href="E">JavaScript Examples</a></p>
+        <div class="note">
+            <p>If you try all the examples, you will learn a lot about JavaScript, in a very short time!</p>
+        </div>
+
+        <hr>
+        <h2>Why Study JavaScript?</h2>
+        <p>JavaScript is one of the <strong>3 languages</strong> all web developers <strong>
+                must</strong>
+            learn:</p>
+        <p>&nbsp;&nbsp; 1. <strong>HTML</strong> to define the content of web pages</p>
+        <p>&nbsp;&nbsp; 2. <strong>CSS</strong> to specify the layout of web pages</p>
+        <p>&nbsp;&nbsp; 3. <strong>JavaScript</strong> to program the behavior of web pages </p>
+        <p>Web pages are not the only place where JavaScript is used.
+            Many desktop and server programs use JavaScript. Node.js is the best known.
+            Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.</p>
+
+        <hr>
+
+        <hr>
+        <div class="note">
+            <h3>Did You Know?</h3>
+            <p>JavaScript and <a href="/java/default.asp">Java</a> are completely different languages, both in concept
+                and design.</p>
+            <p>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard
+                in 1997.<br>ECMA-262 is the official name of the standard. ECMAScript is the official name of the
+                language.
+            </p>
+            <p>You can read more about the different JavaScript versions in the chapter
+                <a href="#">JS Versions</a>.</p>
+        </div>
+        <br>
+        <h2>Learning Speed</h2>
+        <p>In this tutorial, the learning speed is your choice.</p>
+        <p>Everything is up to you.</p>
+        <p>If you are struggling, take a break, or reread the material.</p>
+        <p><strong>Always</strong> make sure you understand <strong>all</strong> the "Try-it-Yourself"
+            examples.</p>
+        <hr>
+        <h2>JavaScript References</h2>
+        <p>W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.</p>
+        <p>The reference contains examples for all properties, methods and events, and
+            is continuously updated according to the latest web standards.</p>
+        <p><a href="#">Complete JavaScript Reference</a></p>
+        <hr>
+        <br><br><br><br><br>
+    </div>
+
+    <div *ngSwitchCase="'intro'" class="content">
+        <h1>JavaScript Introduction</h1>
+
+        <hr>
+        <div class="note_green">
+            <p>This page contains some examples of what JavaScript can do.</p>
+        </div>
+        <hr>
+
+        <h2>JavaScript Can Change HTML Content</h2>
+        <p>One of many JavaScript HTML methods is <code class="tag">getElementById()</code>.</p>
+        <p>This example uses the method to "find" an HTML element (with id="demo")
+            and changes the element content (<code class="tag">innerHTML</code>) to "Hello
+            JavaScript":</p>
+
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo"><span class="jscolor"><span class="jsnumbercolor">
+                    </span> document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span
+                        class="jsstringcolor">"Hello
+                        JavaScript"</span>; </span></div>
+            <a target="_blank" class="try_link" href="#">Try it Yourself »</a>
+        </div>
+        <div class="note">
+            <p>JavaScript accepts both double and single quotes:</p>
+        </div>
+        <br>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo"><span class="jscolor"><span class="jsnumbercolor">
+                    </span> document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">'demo'</span>).<span class="jspropertycolor">innerHTML</span> = <span
+                        class="jsstringcolor">'Hello
+                        JavaScript'</span>; </span></div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself
+                »</a>
+        </div>
+        <hr>
+
+        <h2>JavaScript Can Change HTML Attribute Values</h2>
+        <p>In this example JavaScript changes the value of the <code class="tag">src</code> (source) attribute of an
+            <code class="tag">&lt;img&gt;</code> tag:</p>
+
+        <div class="jumbo">
+            <h3>The Light Bulb</h3>
+            <div class="in_jumbo" style="text-align:center">
+                <button onclick="document.getElementById('myImage').src='/assets/img/pic_bulbon.gif'">Turn on the
+                    light</button>
+                <img id="myImage" style="border: 0;" src="/assets/img/pic_bulboff.gif" style="width:100px">
+                <button onclick="document.getElementById('myImage').src='/assets/img/pic_bulboff.gif'">Turn off the
+                    light</button>
+            </div>
+            <p>
+                <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+            </p>
+        </div>
+        <hr>
+
+        <hr>
+
+        <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+        <p>Changing the style of an HTML element, is a variant of changing an HTML
+            attribute:</p>
+
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo"><span class="jscolor"><span class="jsnumbercolor">
+                    </span> document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">style</span>.<span
+                        class="jspropertycolor">fontSize</span> = <span class="jsstringcolor">"35px"</span>; </span>
+            </div>
+            <a target="_blank" class="try_link" href="#">Try it Yourself »</a>
+        </div>
+        <hr>
+
+        <h2>JavaScript Can Hide HTML Elements</h2>
+        <p>Hiding HTML elements can be done by changing the <code class="tag">display</code> style:</p>
+
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo"><span class="jscolor"><span class="jsnumbercolor">
+                    </span> document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">style</span>.<span
+                        class="jspropertycolor">display</span> = <span class="jsstringcolor">"none"</span>; </span>
+            </div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+        <hr>
+
+        <h2>JavaScript Can Show HTML Elements</h2>
+        <p>Showing hidden HTML elements can also be done by changing the <code class="tag">display</code> style:</p>
+
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo"><span class="jscolor"><span class="jsnumbercolor">
+                    </span> document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">style</span>.<span
+                        class="jspropertycolor">display</span> = <span class="jsstringcolor">"block"</span>; </span>
+            </div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+        <br><br><br><br>
+    </div>
+
+    <div *ngSwitchCase="'where'" class="content">
+
+        <h1>JavaScript Where To</h1>
+        <hr>
+
+
+        <h2>The &lt;script&gt; Tag</h2>
+        <p>In HTML, JavaScript code must be inserted between <code class="tag">&lt;script&gt;</code> and <code
+                class="tag">&lt;/script&gt;</code> tags.</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"><br>
+                    document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span
+                        class="jsstringcolor">"My First JavaScript"</span>;<br>
+                </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span
+                        class="tagcolor">&gt;</span></span>
+            </div>
+            <p>
+                <a class="try_link" href="3" target="_blank">Try it Yourself »</a>
+            </p>
+        </div>
+
+        <div class="note">
+            <p>Old JavaScript examples may use a type attribute: &lt;script type="text/javascript"&gt;.<br>
+                The type attribute is not required. JavaScript is the default scripting language in HTML.</p>
+        </div>
+
+        <hr>
+        <h2>JavaScript Functions and Events</h2>
+        <p>A JavaScript <code class="tag">function</code> is a block of JavaScript code, that can be executed when
+            "called" for.</p>
+        <p>For example, a function can be called when an <b>event</b> occurs, like when the user clicks a button.</p>
+        <div class="note">
+            <p>You will learn much more about functions and events in later chapters.</p>
+        </div>
+        <hr>
+
+        <h2>JavaScript in &lt;head&gt; or &lt;body&gt;</h2>
+        <p>You can place any number of scripts in an HTML document.</p>
+        <p>Scripts can be placed in the <code class="tag">&lt;body&gt;</code>, or in the <code
+                class="tag">&lt;head&gt;</code> section of an HTML page, or in both.</p>
+
+        <hr>
+        <h2>JavaScript in &lt;head&gt;</h2>
+        <p>In this example, a JavaScript <code class="tag">function</code> is placed in the <code
+                class="tag">&lt;head&gt;</code> section
+            of an HTML page.</p>
+        <p>The function is invoked (called) when a button is clicked:</p>
+        <br>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE<span class="attributecolor">
+                        html</span><span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span>
+                <p><span class="tagnamecolor"><span class="tagcolor">&lt;</span>head<span
+                            class="tagcolor">&gt;</span></span><br>
+                    <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span
+                            class="tagcolor">&gt;</span></span><span class="jscolor"><br>
+                        <span class="jskeywordcolor">function</span> myFunction() <br><span class="jsnumbercolor">
+                        </span>&nbsp;&nbsp;document.<span class="jspropertycolor">getElementById</span>(<span
+                            class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span
+                            class="jsstringcolor">"Paragraph changed."</span>;<br><span class="jsnumbercolor">
+                        </span><br>
+                    </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span
+                            class="tagcolor">&gt;</span></span><br>
+                    <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/head<span
+                            class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span
+                            class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span></p>
+                <p><span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span
+                            class="tagcolor">&gt;</span></span>A Web Page<span class="tagnamecolor"><span
+                            class="tagcolor">&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br><span
+                        class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span
+                                class="attributevaluecolor">="demo"</span></span><span
+                            class="tagcolor">&gt;</span></span>A Paragraph<span class="tagnamecolor"><span
+                            class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><span
+                        class="tagnamecolor"><span class="tagcolor">&lt;</span>button<span class="attributecolor">
+                            type<span class="attributevaluecolor">="button"</span> onclick<span
+                                class="attributevaluecolor">="myFunction()"</span></span><span
+                            class="tagcolor">&gt;</span></span>Try
+                    it<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/button<span
+                            class="tagcolor">&gt;</span></span></p>
+                <p><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span
+                            class="tagcolor">&gt;</span></span><br>
+                    <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span
+                            class="tagcolor">&gt;</span></span>
+                </p>
+            </div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+
+        <hr>
+
+        <h2>JavaScript in &lt;body&gt;</h2>
+        <p>In this example, a JavaScript <code class="tag">function</code> is placed in the <code
+                class="tag">&lt;body&gt;</code> section of an HTML page.</p>
+        <p>The function is invoked (called) when a button is clicked:</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE<span class="attributecolor">
+                        html</span><span class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span
+                        class="tagcolor">&gt;</span></span>
+                <br><br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span
+                        class="tagcolor">&gt;</span></span>A Web Page<span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span
+                            class="attributevaluecolor">="demo"</span></span><span class="tagcolor">&gt;</span></span>A
+                Paragraph<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>button<span class="attributecolor">
+                        type<span class="attributevaluecolor">="button"</span> onclick<span
+                            class="attributevaluecolor">="myFunction()"</span></span><span
+                        class="tagcolor">&gt;</span></span>Try
+                it<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/button<span
+                        class="tagcolor">&gt;</span></span><br>
+                <br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"><br>
+                    <span class="jskeywordcolor">function</span> myFunction() <br><span class="jsnumbercolor">
+                    </span> &nbsp;document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span
+                        class="jsstringcolor">"Paragraph changed."</span>;<br><span class="jsnumbercolor">
+                    </span><br>
+                </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span
+                        class="tagcolor">&gt;</span></span><br>
+                <br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span
+                        class="tagcolor">&gt;</span></span>
+            </div>
+            <a target="_blank" class="try_link" href="#">Try it Yourself »</a>
+        </div>
+        <br>
+        <div class="note">
+            <p>Placing scripts at the bottom of the &lt;body&gt; element improves the display
+                speed, because script interpretation slows down the display.</p>
+        </div>
+
+        <hr>
+        <h2>External JavaScript</h2>
+        <p>Scripts can also be placed in external files:</p>
+        <div class="jumbo">
+            <h3>External file: myScript.js</h3>
+            <div class="in_jumbo"><span class="jscolor">
+                    <span class="jskeywordcolor">function</span> myFunction() <br><span class="jsnumbercolor">
+                    </span>&nbsp;document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span
+                        class="jsstringcolor">"Paragraph changed."</span>;<br><span class="jsnumbercolor">
+                    </span><span class="jsnumbercolor">
+                    </span> </span></div>
+        </div>
+        <br>
+        <p>External scripts are practical when the same code is used in many different web pages. </p>
+        <p>JavaScript files have the file extension <strong>.js</strong>.</p>
+        <p>To use an external script, put the name of the script file in the <code class="tag">src</code> (source)
+            attribute of
+            a <code class="tag">&lt;script&gt;</code> tag:</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="attributecolor">
+                        src<span class="attributevaluecolor">="myScript.js"</span></span><span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"></span><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span> </div>
+            <a target="_blank" href="#" class="try_link">Try it Yourself »</a>
+        </div>
+        <br>
+        <p>You can place an external script reference in <code class="tag">&lt;head&gt;</code> or <code
+                class="tag">&lt;body&gt;</code> as you like.</p>
+        <p>The script will behave as if it was located exactly where the <code class="tag">&lt;script&gt;</code> tag is
+            located.</p>
+
+        <div class="note">
+            <p>External scripts cannot contain <code class="tag">&lt;script&gt;</code> tags.</p>
+        </div>
+
+        <hr>
+        <h2>External JavaScript Advantages</h2>
+        <p>Placing scripts in external files has some advantages:</p>
+        <ul>
+            <li>It separates HTML and code</li>
+            <li>It makes HTML and JavaScript easier to read and maintain</li>
+            <li>Cached JavaScript files can speed up page loads</li>
+        </ul>
+        <p>To add several script files to one page&nbsp; - use several script tags:</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="attributecolor">
+                        src<span class="attributevaluecolor">="myScript1.js"</span></span><span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"></span><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="attributecolor">
+                        src<span class="attributevaluecolor">="myScript2.js"</span></span><span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"></span><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
+            </div>
+        </div>
+
+
+        <hr>
+        <h2>External References</h2>
+        <p>External scripts can be referenced with a full URL or with a path relative to the current web
+            page.</p>
+        <p>This example uses a full URL to link to a script: </p>
+        <br>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="attributecolor">
+                        src<span
+                            class="attributevaluecolor">="https://www.w3schools.com/js/myScript1.js"</span></span><span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"></span><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
+            </div>
+            <p><a target="_blank" href="#" class="try_link">Try it Yourself »</a></p>
+        </div>
+        <br>
+        <p>This example uses a script located in a specified folder on the current web
+            site:</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="attributecolor">
+                        src<span class="attributevaluecolor">="/js/myScript1.js"</span></span><span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"></span><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
+            </div>
+            <p><a target="_blank" href="#" class="try_link">Try it Yourself »</a></p>
+        </div>
+        <br>
+        <p>This example links to a script located in the same folder as the current page:</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span class="attributecolor">
+                        src<span class="attributevaluecolor">="myScript1.js"</span></span><span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"></span><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span>
+            </div>
+            <p><a target="_blank" href="#" class="try_link">Try it Yourself »</a></p>
+        </div>
+
+        <div class="note">
+            <p>You can read more about file paths in the chapter <a href="#">HTML
+                    File Paths</a>.</p>
+        </div>
+
+        <br><br><br><br><br>
+    </div>
+
+    <div *ngSwitchCase="'output'" class="content">
+        <h1>JavaScript Output</h1>
+        <hr>
+        <h2>JavaScript Display Possibilities</h2>
+        <p>JavaScript can "display" data in different ways:</p>
+        <ul>
+            <li>Writing into an HTML element, using <code class="tag">innerHTML</code>.</li>
+            <li>Writing into the HTML output using <code class="tag">document.write()</code>.</li>
+            <li>Writing into an alert box, using <code class="tag">window.alert()</code>.</li>
+            <li>Writing into the browser console, using <code class="tag">console.log()</code>.</li>
+        </ul>
+
+        <hr>
+        <h2>Using innerHTML</h2>
+        <p>To access an HTML element, JavaScript can use the <code class="tag">document.getElementById(id)</code>
+            method. </p>
+        <p>The <code class="tag">id</code> attribute defines the HTML element. The <code class="tag">innerHTML</code>
+            property defines the HTML content:</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE<span class="attributecolor">
+                        html</span><span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span
+                        class="tagcolor">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span
+                        class="tagcolor">&gt;</span></span>My First Web Page<span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span
+                        class="tagcolor">&gt;</span></span>My First Paragraph<span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+                <br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="attributecolor"> id<span
+                            class="attributevaluecolor">="demo"</span></span><span
+                        class="tagcolor">&gt;</span></span><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"><br><span class="jsnumbercolor">
+                    </span> document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span
+                        class="jsnumbercolor">5</span> + <span class="jsnumbercolor">6</span>;<br><span
+                        class="jsnumbercolor">
+                    </span> </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span
+                        class="tagcolor">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span
+                        class="tagcolor">&gt;</span></span>
+            </div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+        <br>
+        <div class="note">
+            <p>Changing the innerHTML property of an HTML element
+                is a common way to display data in HTML.</p>
+        </div>
+
+        <hr>
+
+        <h2>Using document.write()</h2>
+        <p>For testing purposes, it is convenient to use <code class="tag">document.write()</code>:</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE<span class="attributecolor">
+                        html</span><span class="tagcolor">&gt;</span></span><br><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span
+                        class="tagcolor">&gt;</span></span><br><br><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>h1<span class="tagcolor">&gt;</span></span>My First Web Page<span
+                    class="tagnamecolor"><span class="tagcolor">&lt;</span>/h1<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span
+                        class="tagcolor">&gt;</span></span>My first paragraph.<span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br>
+                <br><span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"><br>document.<span
+                        class="jspropertycolor">write</span>(<span class="jsnumbercolor">5</span> + <span
+                        class="jsnumbercolor">6</span>);<br></span><span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/script<span class="tagcolor">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span
+                        class="tagcolor">&gt;</span></span>
+            </div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+        <div class="note_red">
+            <p>Using document.write() after an HTML document is loaded, will <strong>delete all existing HTML</strong>:
+            </p>
+        </div>
+        <br>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE<span class="attributecolor">
+                        html</span><span class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span
+                        class="tagcolor">&gt;</span></span><br><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span
+                        class="tagcolor">&gt;</span></span>My First Web Page<span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span
+                        class="tagcolor">&gt;</span></span>My first paragraph.<span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>button<span class="attributecolor">
+                        type<span class="attributevaluecolor">="button"</span> onclick<span
+                            class="attributevaluecolor">="document.write(5 + 6)"</span></span><span
+                        class="tagcolor">&gt;</span></span>Try it<span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/button<span class="tagcolor">&gt;</span></span><br><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span
+                        class="tagcolor">&gt;</span></span>
+            </div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+
+        <div class="note">
+            <p>The document.write() method should only be used for testing.</p>
+        </div>
+
+
+
+        <hr>
+
+        <h2>Using window.alert()</h2>
+        <p>You can use an alert box to display data:</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE<span class="attributecolor">
+                        html</span><span class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span
+                        class="tagcolor">&gt;</span></span><br><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span
+                        class="tagcolor">&gt;</span></span>My First Web Page<span class="tagnamecolor"><span
+                        class="tagcolor">&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br><span
+                    class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span></span>My
+                first paragraph.<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span
+                        class="tagcolor">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"><br>window.<span
+                        class="jspropertycolor">alert</span>(<span class="jsnumbercolor">5</span> + <span
+                        class="jsnumbercolor">6</span>);<br>
+                </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span
+                        class="tagcolor">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span
+                        class="tagcolor">&gt;</span></span>
+            </div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+
+        <hr>
+        <h2>Using console.log()</h2>
+        <p>For debugging purposes, you can use the <code class="tag">console.log()</code> method to display data.</p>
+
+        <div class="note">
+            <p>You will learn more about debugging in a later chapter.</p>
+        </div>
+        <br>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo">
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>!DOCTYPE<span class="attributecolor">
+                        html</span><span class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span
+                        class="tagcolor">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>script<span
+                        class="tagcolor">&gt;</span></span><span class="jscolor"><br>
+                    console.<span class="jspropertycolor">log</span>(<span class="jsnumbercolor">5</span> + <span
+                        class="jsnumbercolor">6</span>);<br>
+                </span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/script<span
+                        class="tagcolor">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span
+                        class="tagcolor">&gt;</span></span><br>
+                <span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span
+                        class="tagcolor">&gt;</span></span>
+            </div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+        <br> <br> <br><br> <br>
+    </div>
+
+    <div *ngSwitchCase="'statements'" class="content">
+
+        <h1>JavaScript Statements</h1>
+        <hr>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo"><span class="jscolor">
+                    <span class="jskeywordcolor">var</span> x, y, z;&nbsp;&nbsp;&nbsp; <span class="commentcolor">//
+                        Statement 1<br></span>
+                    x = <span class="jsnumbercolor">5</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="commentcolor">// Statement 2<br></span>
+                    y = <span class="jsnumbercolor">6</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="commentcolor">// Statement 3<br></span>
+                    z = x + y;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor">// Statement 4<br></span><span
+                        class="jsnumbercolor">
+                    </span> </span></div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+
+        <hr>
+        <h2>JavaScript Programs</h2>
+        <p>A <strong>computer program</strong> is a list of "instructions" to be
+            "executed" by a computer.</p>
+        <p>In a programming language, these programming instructions are called <strong>statements</strong>.</p>
+        <p>A <strong>JavaScript program</strong> is a list of programming <strong>statements</strong>.</p>
+
+        <div class="note">
+            <p>In HTML, JavaScript programs are executed by the web browser.</p>
+        </div>
+
+        <hr>
+
+        <h2>JavaScript Statements</h2>
+        <p>JavaScript statements are composed of:</p>
+        <p>Values, Operators, Expressions,&nbsp;Keywords,
+            and Comments.</p>
+        <p>This statement tells the browser to write "Hello Dolly."
+            inside an HTML element with id="demo":</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo"><span class="jscolor">
+                    document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> = <span
+                        class="jsstringcolor">"Hello Dolly."</span>; </span></div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+        <br>
+        <p>Most JavaScript
+            programs contain many JavaScript statements.</p>
+        <p>The statements are executed, one by one, in the
+            same order as they are written.</p>
+
+        <div class="note">
+            <p>JavaScript programs (and JavaScript statements) are often called JavaScript code.
+            </p>
+        </div>
+
+        <hr>
+        <h2>Semicolons ;</h2>
+        <p>Semicolons separate JavaScript statements.</p>
+        <p>Add a semicolon at the end of each executable statement: </p>
+        <div class="jumbo">
+            <div class="in_jumbo"><span class="jscolor"><span class="jsnumbercolor">
+                    </span> <span class="jskeywordcolor">var</span> a, b, c;&nbsp;&nbsp;&nbsp;&nbsp; <span
+                        class="commentcolor">// Declare 3 variables<br></span>a = <span
+                        class="jsnumbercolor">5</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="jsnumbercolor">
+                    </span> <span class="commentcolor">// Assign the value 5 to a<br></span>
+                    b = <span
+                        class="jsnumbercolor">6</span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="commentcolor">// Assign the
+                        value 6 to b<br></span>
+                    c = a + b;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="commentcolor">// Assign the sum of a and
+                        b to c<br></span><span class="jsnumbercolor">
+                    </span> </span></div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+        <br>
+        <p>
+            When separated by semicolons, multiple statements on one line are allowed:</p>
+        <br>
+        <div class="jumbo">
+            <div class="in_jumbo"><span class="jscolor">
+                    a = <span class="jsnumbercolor">5</span>; b = <span class="jsnumbercolor">6</span>; c = a + b;<span
+                        class="jsnumbercolor">
+                    </span> </span></div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+
+        <div class="note">
+            <p>On the web, you might see examples without semicolons. <br>
+                Ending statements with semicolon is not required, but highly recommended.</p>
+        </div>
+
+
+        <hr>
+        <h2>JavaScript White Space</h2>
+        <p>JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.</p>
+        <p>The following lines are equivalent:</p>
+
+        <div class="jumbo">
+            <div class="in_jumbo"><span class="jscolor">
+                    <span class="jskeywordcolor">var</span> person = <span class="jsstringcolor">"Hege"</span>;<br>
+                    <span class="jskeywordcolor">var</span> person=<span class="jsstringcolor">"Hege"</span>;<span
+                        class="jsnumbercolor">
+                    </span> </span></div>
+        </div>
+        <br>
+        <p>A good practice is to put spaces around operators ( = + - * / ):</p>
+
+        <div class="jumbo">
+            <div class="in_jumbo"><span class="jscolor">
+                    <span class="jskeywordcolor">var</span> x = y + z; </span></div>
+        </div>
+        <hr>
+
+        <h2>JavaScript Line Length and Line Breaks</h2>
+        <p>For best readability, programmers often like to avoid code lines longer than 80
+            characters.</p>
+        <p>If a JavaScript statement does not fit on one line, the best place to break
+            it is after an operator:</p>
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo"><span class="jscolor">
+                    document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span> =<br><span
+                        class="jsstringcolor">"Hello Dolly!"</span>; </span></div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+        <hr>
+
+        <h2>JavaScript Code Blocks</h2>
+        <p>JavaScript statements can be grouped together in code blocks, inside curly
+            brackets ....</p>
+        <p>The purpose of code blocks is to define statements to be executed together.</p>
+        <p>One place you will find statements grouped together in blocks, is in
+            JavaScript functions:</p>
+
+        <div class="jumbo">
+            <h3>Example</h3>
+            <div class="in_jumbo"><span class="jscolor"><span class="jsnumbercolor">
+                    </span> <span class="jskeywordcolor">function</span> myFunction() <br><span class="jsnumbercolor">
+                    </span>&nbsp;&nbsp;document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo1"</span>).<span class="jspropertycolor">innerHTML</span> = <span
+                        class="jsstringcolor">"Hello Dolly!"</span>;<br><span class="jsnumbercolor">
+                    </span>&nbsp;&nbsp;document.<span class="jspropertycolor">getElementById</span>(<span
+                        class="jsstringcolor">"demo2"</span>).<span class="jspropertycolor">innerHTML</span> = <span
+                        class="jsstringcolor">"How are you?"</span>;<br><span class="jsnumbercolor">
+                    </span><br><span class="jsnumbercolor">
+                    </span> </span></div>
+            <a class="try_link" href="#" target="_blank">Try it Yourself »</a>
+        </div>
+        <div class="note">
+            <p>In this tutorial we use 2 spaces of indentation for code blocks.<br>
+                You will learn more about functions later in this tutorial.</p>
+        </div>
+
+        <hr>
+        <h2>JavaScript Keywords</h2>
+        <p>JavaScript statements often start with a <strong>keyword</strong>
+            to identify the JavaScript action to be performed.</p>
+        <p>Visit our Reserved Words reference to view a full list of
+            <a href="#">JavaScript keywords</a>.</p>
+        <p>Here is a list of some of the keywords you will learn about in
+            this tutorial: </p>
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <th>Keyword</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>break</td>
+                    <td>Terminates a switch or a loop</td>
+                </tr>
+                <tr>
+                    <td>continue</td>
+                    <td>Jumps out of a loop and starts at the top</td>
+                </tr>
+                <tr>
+                    <td>debugger</td>
+                    <td>Stops the execution of JavaScript, and calls (if available) the debugging
+                        function</td>
+                </tr>
+                <tr>
+                    <td>do ... while</td>
+                    <td>Executes a block of statements, and repeats the block, while a condition is
+                        true</td>
+                </tr>
+                <tr>
+                    <td>for</td>
+                    <td>Marks a block of statements to be executed, as long as a condition is true</td>
+                </tr>
+                <tr>
+                    <td>function</td>
+                    <td>Declares a function</td>
+                </tr>
+                <tr>
+                    <td>if ... else</td>
+                    <td>Marks a block of statements to be executed, depending on a condition</td>
+                </tr>
+                <tr>
+                    <td>return</td>
+                    <td>Exits a function</td>
+                </tr>
+                <tr>
+                    <td>switch</td>
+                    <td>Marks a block of statements to be executed, depending on different cases</td>
+                </tr>
+                <tr>
+                    <td>try ... catch</td>
+                    <td>Implements error handling to a block of statements</td>
+                </tr>
+                <tr>
+                    <td>var</td>
+                    <td>Declares a variable</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="note">
+            <p>JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.</p>
+        </div>
+        <br><br><br><br><br>
+
+    </div>
+    <button class="btn btn-success" (click)="download()" style="margin:auto">Download</button>
+    <a target="_self" id="path" href="../../assets/pdf/js/" hidden download="">Click here to download</a>
+
+
+</div>
