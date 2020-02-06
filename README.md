@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Backend
-Backcend api developed using [Node.js](https://nodejs.org/), authentication using [JWT](https://jwt.io/) and [Passport.js](https://jwt.io/). [MongoDb](https://www.mongodb.com/) used for database.
+Backend api developed using [Node.js](https://nodejs.org/), authentication using [JWT](https://jwt.io/) and [Passport.js](https://jwt.io/). [MongoDb](https://www.mongodb.com/) used for database.
 
 ## Code scaffolding
 
